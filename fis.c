@@ -4,7 +4,7 @@
 
 long cifre(long x) //returns the number of digits a number has
 {
-	int nr = 0;
+	long nr = 0;
 	while (x != 0)
 	{
 		x = x/10;
