@@ -18,10 +18,10 @@ int main()
 	long i=0;
 	FILE* g;
 	char* v;
-	char buffer[1025];
+	char buffer[10250];
 	int j=0;
 
-	for (j=0;j<1024;j++)
+	for (j=0;j<10240;j++)
 		buffer[j] = 'x';
 
 	while (1)
