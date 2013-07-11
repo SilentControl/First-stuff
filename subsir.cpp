@@ -10,7 +10,7 @@ int LCS(int a[], int m, int b[], int n)
   if (m == -1 || n == -1)
     return 0;
   else
-    if (a[m] == a[n])
+    if (a[m] == b[n]) // a != b && 0 != 'o'
       return 1 + LCS(a,m-1,b,n-1);
     else
       return max(LCS(a,m-1,b,n),LCS(a,m,b,n-1));
